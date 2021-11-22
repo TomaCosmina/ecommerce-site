@@ -1,0 +1,27 @@
+<%layout('layouts/principal')%>
+    <link rel="stylesheet" href="/stylesheets/navbar.css">
+    <link rel="stylesheet" href="/stylesheets/shop.css">
+    <div id="navs" class="m-5 text-center"><a href="/products">HOME</a> / <a href="/men">MEN</a> / <a href="/women">WOMEN</a></div>
+
+    <div class="container mt-5">
+        <%for(let i=4;i<products.length;i++){%>
+            <div class="sections">
+                <div class="images card">
+                    <a href="/products/<%=products[i]._id%> "> <img class="card-img-top" src="<%=products[i].image%> " alt=""></a>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">
+                        <%=products[i].title%>
+                    </div>
+                    <h4>
+                        $
+                        <%=products[i].price%>
+                    </h4>
+                    <p class="card-text">
+                        <%=products[i].description%>
+                    </p>
+                </div>
+            </div>
+            <%}%>
+
+    </div>

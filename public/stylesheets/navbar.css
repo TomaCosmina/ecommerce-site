@@ -1,0 +1,53 @@
+.navbar {
+    color: #8E9AAF;
+}
+
+a,
+.navbar-light .navbar-nav .nav-link,
+#active {
+    color: #8E9AAF;
+}
+
+a:hover,
+.navbar-light .navbar-nav .nav-link:hover,
+#active:hover {
+    color: #333
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #8E9AAF;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover.dropdown-content {
+    display: block;
+}
+
+.dropbtn {
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content a {
+    display: block;
+}
+
+#button {
+    background-color: transparent;
+    border: none;
+    color: #8E9AAF;
+    font-weight: 700;
+    opacity: 0.6;
+    font-size: 12px;
+    margin-left: 1em
+}

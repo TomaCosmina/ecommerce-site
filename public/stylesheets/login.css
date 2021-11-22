@@ -1,0 +1,80 @@
+.navbar {
+    color: #8E9AAF;
+}
+
+a,
+.navbar-light .navbar-nav .nav-link,
+#active {
+    color: #8E9AAF;
+}
+
+a:hover,
+.navbar-light .navbar-nav .nav-link:hover,
+#active:hover {
+    color: #333
+}
+
+#login {
+    color: #333;
+}
+
+p {
+    text-align: center;
+}
+
+#button:hover {
+    color: #fefae0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.form {
+    width: 20em;
+    margin-bottom: 20vh;
+}
+
+.form-control {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+hr {
+    border-top: 1px solid #333;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.sections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+input:hover {
+    border-color: #333;
+}
+
+.grid-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 10%;
+    color: #F8F9FA;
+    font-size: .2em;
+}
+
+.contact,
+.newsleter,
+.more {
+    width: fit-content;
+}
+
+#button {
+    background-color: transparent;
+    border: none;
+    color: #8E9AAF;
+    font-weight: 700;
+    opacity: 0.6;
+    font-size: 12px;
+    margin-left: 1.2em
+}
+
+#button:hover {
+    color: #333;
+}

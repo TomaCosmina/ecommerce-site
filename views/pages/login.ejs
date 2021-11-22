@@ -1,0 +1,18 @@
+<%-layout('layouts/principal')%>
+    <link rel="stylesheet" href="/stylesheets/login.css">
+    <div id="login">
+        <div class="container justify-content-center form ">
+            <h1 class="m-5 text-center ">Login</h1>
+            <p>Don't have an account? <a href="/register">Sign up</a></p>
+            <form action="">
+                <label class="form-label" for="email"></label>
+                <input class="form-control" type="text" name="email" id="email" placeholder="E-mail">
+                <label class="form-label" for="password"></label>
+                <input class="form-control" type="password" name="password" id="password" placeholder="Password">
+                <button id="buttonLog" class="btn btn-outline-secondary mt-3 ">Log in</button>
+            </form>
+        </div>
+    </div>
+
+
+    <%-include('../partial/footer') %>

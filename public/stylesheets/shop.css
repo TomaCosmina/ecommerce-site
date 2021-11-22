@@ -1,0 +1,19 @@
+@media(min-width:800px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2em;
+        row-gap: 2em;
+    }
+}
+
+.sections {
+    border: 1px solid #8E9AAF;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    margin-bottom: 2em;
+}
+
+.images img:hover {
+    opacity: .5;
+    transition: 1s;
+}

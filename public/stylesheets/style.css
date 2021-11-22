@@ -1,0 +1,132 @@
+    /*
+#b5c99a-light green
+#fefae0-white
+#87986a-dark green
+
+
+
+#8E9AAF-grey;
+#FEEAFA-pink;
+#F8F9FA-white
+*/
+    
+     ::-webkit-scrollbar {
+        background-color: #FEEAFA;
+        width: 5px;
+    }
+    
+    ::-webkit-scrollbar-button {
+        background-color: #FEEAFA;
+    }
+    
+    ::-webkit-scrollbar-corner {
+        background-color: #FEEAFA;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background-color: #FEEAFA;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background-color: #8E9AAF;
+        border-radius: 2em;
+    }
+    
+    body {
+        background-color: #F8F9FA;
+        font-family: 'Raleway', sans-serif;
+        color: #8E9AAF;
+    }
+    
+    .navbar {
+        background-color: transparent;
+        width: 100%;
+        display: flex;
+        z-index: 1;
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    }
+    
+    .navbar-light .navbar-nav .nav-link {
+        padding: 0.25rem 0;
+        font-weight: 700;
+        color: #F8F9FA;
+        margin-left: 1rem;
+        border-bottom: 0.25rem solid transparent;
+        opacity: 0.6;
+        font-size: 12px;
+    }
+    
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: #F8F9FA;
+        border-bottom-color: #F8F9FA;
+        opacity: 1;
+    }
+    
+    .navbar-toggler {
+        background-color: #8E9AAF;
+        border-color: #333;
+    }
+    
+    .scrolled-nav {
+        background-color: #8E9AAF;
+        color: #FEEAFA;
+        transition: 0.5s;
+        width: 100%;
+        margin: 0px;
+        transition: .5s;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #FEEAFA;
+        opacity: 0.7;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+    
+    .dropdown-content a {
+        color: #333;
+        padding: .5em;
+        display: block;
+        text-decoration: none;
+        width: 20em;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: #F8F9FA;
+        color: #333;
+        transition: .5s;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    #active,
+    .brand {
+        color: #F8F9FA;
+        border-bottom-color: #F8F9FA;
+        opacity: 1;
+    }
+    
+    .brand {
+        display: block;
+        margin: 0 auto;
+        padding-left: 12%;
+    }
+    
+    .no-display {
+        display: none;
+    }
+    
+    .brand-left {
+        display: block;
+        margin-left: 0px;
+    }
+    
+    a,
+    a:hover {
+        text-decoration: none;
+        color: #F8F9FA;
+    }

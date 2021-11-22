@@ -1,0 +1,8 @@
+.images img {
+    width: 20em;
+    height: auto;
+}
+
+.images {
+    display: inline-block;
+}

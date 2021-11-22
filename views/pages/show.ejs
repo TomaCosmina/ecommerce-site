@@ -1,0 +1,43 @@
+<%layout('layouts/principal')%>
+    <link rel="stylesheet" href="/stylesheets/show.css">
+    <link rel="stylesheet" href="/stylesheets/navbar.css">
+    <div class="sections">
+        <div class="product-image">
+            <img src="<%=product.image%>" alt="">
+        </div>
+        <div class="product-info ml-3 px-5">
+            <div id="navs" class="mb-4"><a href="/products">HOME</a> / <a href="/login">LOGIN</a> / <a href="/shop">SHOP</a> /</div>
+            <h1 id="title" class="mb-2">
+                <%=product.title%>
+            </h1>
+            <h4 id="price" class="mb-4">
+                $
+                <%=product.price%>
+            </h4>
+            <div id="category">
+                <%=product.category%>
+            </div>
+            <div>
+                <%=product.type%>
+            </div>
+            <p id="color" class="mb-2">Colors:</p>
+            <div class="colors mb-4 ">
+                <%for(let i=1;i<=5;i++){%>
+                    <div class="color mr-1"></div>
+                    <%}%>
+            </div>
+            <p id="size" class="mb-2">SELECT SIZE:</p>
+            <div class="sizes">
+                <%for(let i=5;i<=11;i++){%>
+                    <button class="size mr-1 size-button" value="<%=i%>" onclick="buttonClicked()">
+                        <%=i%>
+                    </button>
+                    <%}%>
+            </div>
+
+            <button id="cart-added" class="btn  btn-secondary "><a href="/products/<%product._id%>/cart">Add to cart</a></button>
+
+        </div>
+    </div>
+
+    <script src="/javascripts/show.js"></script>
